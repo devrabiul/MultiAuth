@@ -1,8 +1,6 @@
+# Multi Auth Login
 
 ![Logo](https://www.sketchappsources.com/resources/source-image/social-login.png)
-
-
-# Multi Auth Login
 
 Multi social login system is a popular type of multi-authentication method used in web applications, mobile applications, and other software systems. This system allows users to authenticate themselves using their social media accounts such as Facebook, Twitter, Google, LinkedIn, and others, instead of creating a separate login account for each application they use.
 
