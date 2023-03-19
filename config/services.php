@@ -34,21 +34,33 @@ return [
     'github' => [
         'client_id' => env('GITHUB_CLIENT_ID'),
         'client_secret' => env('GITHUB_CLIENT_SECRET'),
-        'redirect' => 'http://example.com/callback-url',
+        'redirect' => env('GITHUB_CLIENT_REDIRECT'),
     ],
 
     'facebook' => [
-        'client_id' => 'Facebook app id',
-        'client_secret' => 'Facebook add secret',
-        'redirect' => 'http://localhost:8000/auth/facebook/callback',
+        'client_id' => 'FACEBOOK_CLIENT_ID',
+        'client_secret' => 'FACEBOOK_CLIENT_SECRET',
+        'redirect' => env('FACEBOOK_CLIENT_REDIRECT'),
     ],
 
     'google' => [
-        'client_id' => 'your client id',
-        'client_secret' => 'your client secret key',
-        'redirect' => 'http://localhost:8000/authorized/google/callback',
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect' => env('GOOGLE_CLIENT_REDIRECT'),
     ],
 
-    
+    'linkedin' => [
+        'client_id' => env('LINKEDIN_CLIENT_ID'),
+        'client_secret' => env('LINKEDIN_CLIENT_SECRET'),
+        'redirect' => env('LINKEDIN_CLIENT_REDIRECT'),
+    ],
+
+    'twitter' => [
+        'client_id' => env('TWITTER_CLIENT_ID'),
+        'client_secret' => env('TWITTER_CLIENT_SECRET'),
+        'redirect' => env('TWITTER_CLIENT_REDIRECT'),
+    ],
+
+
 
 ];

@@ -72,12 +72,11 @@
                         <div class="row my-3">
                             <div class="col-md-4"></div>
                             <div class="col-md-8">
-                                <a class="btn btn-sm my-1 btn-success" href=""><i class="fab fa-google"></i> Sign in with Google</a>
-                                <a class="btn btn-sm my-1 btn-primary" href=""><i class="fab fa-facebook"></i> Sign in with Facebook</a>
-                                <a class="btn btn-sm my-1 btn-dark" href=""><i class="fab fa-github"></i> Sign in with Github</a>
-                                <a class="btn btn-sm my-1 btn-info" href=""><i class="fab fa-twitter"></i> Sign in with Twitter</a>
-                                <a class="btn btn-sm my-1 btn-primary" href=""><i class="fab fa-linkedin-in"></i> Sign in with Linkedin</a>
-                                <a class="btn btn-sm my-1 btn-danger" href=""><i class="fab fa-pinterest"></i> Sign in with Pinterest</a>
+                                <span>Register with - </span>
+                                <a class="btn btn-sm my-1 btn-success" href="{{route('redirectToGoogle')}}"><i class="fab fa-google"></i> Google</a>
+                                <a class="btn btn-sm my-1 btn-primary" href=""><i class="fab fa-facebook"></i> Facebook</a>
+                                <a class="btn btn-sm my-1 btn-dark" href="{{route('redirectToGithub')}}"><i class="fab fa-github"></i> Github</a>
+                                <a class="btn btn-sm my-1 btn-primary" href="{{route('redirectToLinkedin')}}"><i class="fab fa-linkedin-in"></i> Linkedin</a>
                             </div>
                         </div>
                     </form>
