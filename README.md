@@ -49,6 +49,12 @@ php artisan migrate
 - Verify With Mail
 - Verify With SMS
 
+#### Need To Setup
+- (Google Console)[https://console.cloud.google.com/apis/credentials]
+- (Facebook Developer)[https://developers.facebook.com/apps/]
+- (Linkedin Devs)[https://www.linkedin.com/developers/apps]
+- (Github)[https://github.com/settings/developers]
+
 
 ### Package Lsit
 
