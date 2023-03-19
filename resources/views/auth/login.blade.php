@@ -69,7 +69,7 @@
                             <div class="col-md-8">
                                 <span>Sign in with - </span>
                                 <a class="btn btn-sm my-1 btn-success" href="{{route('redirectToGoogle')}}"><i class="fab fa-google"></i> Google</a>
-                                <a class="btn btn-sm my-1 btn-primary" href=""><i class="fab fa-facebook"></i> Facebook</a>
+                                <a class="btn btn-sm my-1 btn-primary" href="{{route('redirectToFacebook')}}"><i class="fab fa-facebook"></i> Facebook</a>
                                 <a class="btn btn-sm my-1 btn-dark" href="{{route('redirectToGithub')}}"><i class="fab fa-github"></i> Github</a>
                                 <a class="btn btn-sm my-1 btn-primary" href="{{route('redirectToLinkedin')}}"><i class="fab fa-linkedin-in"></i> Linkedin</a>
                             </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SocialAuth\LoginWithFacebookController;
 use App\Http\Controllers\SocialAuth\LoginWithGithubController;
 use App\Http\Controllers\SocialAuth\LoginWithGoogleController;
 use App\Http\Controllers\SocialAuth\LoginWithLinkedinController;
@@ -21,6 +22,11 @@ Route::controller(LoginWithGithubController::class)->group(function(){
 Route::controller(LoginWithLinkedinController::class)->group(function(){
     Route::get('authorized/linkedin', 'redirectToLinkedin')->name('redirectToLinkedin');
     Route::get('authorized/linkedin/callback', 'handleLinkedinCallback');
+});
+
+Route::controller(LoginWithFacebookController::class)->group(function(){
+    Route::get('authorized/facebook', 'redirectToFacebook')->name('redirectToFacebook');
+    Route::get('authorized/facebook/callback', 'handleFacebookCallback');
 });
 
 Route::controller(LoginWithTwitterController::class)->group(function(){

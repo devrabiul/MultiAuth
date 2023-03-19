@@ -4,6 +4,7 @@ namespace App\Http\Controllers\SocialAuth;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
@@ -23,9 +24,9 @@ class LoginWithGithubController extends Controller
 
             $user = Socialite::driver('github')->user();
 
-            dd($user);
+            // dd($user);
 
-            $finduser = User::where('email', $user->id)->first();
+            $finduser = User::where('email', '=', $user->email)->first();
 
             if($finduser){
                 Auth::login($finduser);
@@ -34,7 +35,9 @@ class LoginWithGithubController extends Controller
                 $newUser = User::create([
                     'name' => $user->name,
                     'email' => $user->email,
-                    'password' => encrypt('123456dummy')
+                    'password' => encrypt('123456dummy'),
+                    'email_verified_at' => Carbon::now(),
+                    'image_url' => $user->attributes['avatar'],
                 ]);
 
                 Auth::login($newUser);
