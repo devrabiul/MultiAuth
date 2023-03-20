@@ -24,7 +24,7 @@ class LoginWithFacebookController extends Controller
 
             $user = Socialite::driver('facebook')->user();
 
-            dd($user);
+            // dd($user);
 
             $finduser = User::where('email', '=', $user->email)->first();
 
